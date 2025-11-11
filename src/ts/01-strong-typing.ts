@@ -9,7 +9,7 @@ myVar = {
     firstName: 'Peter',
     lastName: 'Kassenaar'
 };
-console.log('myVar is nu : ', myVar); // ALL valid!
+console.log('myVar is now : ', myVar); // ALL valid!
 
 //*************************
 // TypeScript - Strongly typed variables.

@@ -16,7 +16,7 @@ namespace type_assertions {
 
     ;
     // In the first variant, we TELL the compiler that a constant is
-    // of a specific type. TypeScript checks beforehand of the properties match.
+    // of a specific type. TypeScript checks BEFOREHAND of the properties match.
 
     // In the second variant, we basically define an 'any' type and AFTERWARDS
     // tell TypeScript that he should treat it as an Employee. This is a bit better
