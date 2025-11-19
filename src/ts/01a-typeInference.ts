@@ -15,10 +15,11 @@ namespace type_inference {
     let num3: number;
 //num3 = 'Hello World'; // invalid
 
-// num4 is also of type number, because of type inference (num 1 is a number, we add 100, so num3 must be a number)
+// num4 is also of type 'number', because of Type Inference (num1 is a number, we add 100, so num4 must also be a number)
+    // TypeScript docs: "use Type Inference when possible"
     const num4 = num1 + 100;
 
-// this WILL work, because of implicit casting. Type Inferences denotes that str1 will be of type string.
+// Not pretty, but this WILL work, because of implicit casting. Type Inferences denotes that str1 will be of type string.
     const str1 = num2 + 'Hello World';
     console.log(str1);
 
