@@ -4,6 +4,15 @@ Examples and demo's on the training TypeScript Fundamentals by internationally a
 
 For more information, or a training at your location, please contact info@kassenaar.com
 
+## Usage
+- The directory `/src/ts` contains the TypeScript code. 
+  - We can compile this to JavaScript using `tsc` and see it in action using the accompanying HTML file in the `/src/html` directory.
+  - This is NOT mandatory, but it is a nice way to see the results of the TypeScript code in the browser.
+- Run `npm install` to install the required dependencies.
+- Run `npm run tsc` to run the TypeScript compiler and place compiled JavaScript in the `src/js` directory.
+- The script is running in `watch` mode, meaning it will automatically recompile the TypeScript code when it detects changes.
+- Press`Ctrl+C` to stop the script.
+
 ## Useful Links
 Some links with extra information we discovered during the training. I found them useful:
 
