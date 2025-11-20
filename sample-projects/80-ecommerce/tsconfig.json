@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-	"target"       : "es5",
-	"sourceMap"    : true,
-	"noEmitOnError": true,
-	"noImplicitAny": true
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["ES2015", "DOM"],
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false
   },
-  "exclude"        : [
-	"node_modules"
+  "exclude": [
+    "node_modules"
   ]
 }

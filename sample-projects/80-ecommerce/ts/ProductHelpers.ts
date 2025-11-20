@@ -15,22 +15,24 @@ export class ProductHelpers {
 			</tr>`;
 	}
 
-	// 2. Details per boek tonen in de ui
-	static showBookDetail(book: Book): string {
-		return `
-			<div class="panel-heading">
-				<h3 class="panel-title">${book.title}</h3>
-			</div>
-			<div class="panel-body">
-				<h3>${book.author}</h3>
-				<h3>${book.ean}</h3>
-				<p>${book.description}</p>
-				<h3>&euro; ${book.price}</h3>
-				<p>Meer informatie: <a href="${book.url}" target="_blank">${book.url}</a></p>
-				<button id="hideDetail" class="btn btn-primary">Verbergen</button>
-			</div>
-		`
-	}
+ // 2. Details per boek tonen in de ui
+ static showBookDetail(book: Book): string {
+     return `
+         <div class="card border-primary mb-3">
+             <div class="card-header bg-primary text-white">
+                 <h3 class="card-title h5 mb-0">${book.title}</h3>
+             </div>
+             <div class="card-body">
+                 <h4 class="h6">${book.author}</h4>
+                 <h4 class="h6">${book.ean}</h4>
+                 <p>${book.description}</p>
+                 <h4 class="h6">&euro; ${book.price}</h4>
+                 <p>Meer informatie: <a href="${book.url}" target="_blank" rel="noopener">${book.url}</a></p>
+                 <button id="hideDetail" class="btn btn-primary">Verbergen</button>
+             </div>
+         </div>
+     `
+ }
 
 	// 3. Rij opbouwen voor weergave in Shopping Cart
 	static cartRow(order: Order): string {
