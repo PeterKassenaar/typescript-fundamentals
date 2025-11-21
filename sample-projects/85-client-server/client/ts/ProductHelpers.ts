@@ -18,10 +18,10 @@ export class ProductHelpers {
 	// 2. Details per boek tonen in de ui
 	static showBookDetail(book: Book): string {
 		return `
-			<div class="panel-heading">
-				<h3 class="panel-title">${book.title}</h3>
+			<div class="card-header">
+				<h3 class="card-title m-0">${book.title}</h3>
 			</div>
-			<div class="panel-body">
+			<div class="card-body">
 				<h3>${book.author}</h3>
 				<h3>${book.ean}</h3>
 				<p>${book.description}</p>

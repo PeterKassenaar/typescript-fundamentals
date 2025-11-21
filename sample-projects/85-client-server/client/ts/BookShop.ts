@@ -20,8 +20,8 @@ export class BookShop {
 
 	// 1. Boeken ophalen en tonen in UI
 	getBooks(): void {
-		// NU: Ophalen van lokale webserver, via NodeJS- API
-		$.ajax('http://localhost:3000/api/books')
+		// Ophalen via relative pad; webpack-dev-server proxy stuurt door naar de API-server
+		$.ajax('/api/books')
 			.then((result: any) => {
 				let rows: string = '';
 				result.forEach((book: any) => {
@@ -103,8 +103,8 @@ export class BookShop {
 		$('#orderCart').on('click', (): void => {
 			let result = ProductHelpers.placeOrder(this.orders);
 			$('#placeOrder').html(result.data);
-			// Verzenden naar 'database' op NodeJS-TypeScript-server
-			$.post('http://localhost:3000/api/order',
+			// Verzenden naar 'database' op NodeJS-TypeScript-server via proxy
+			$.post('/api/order',
 					JSON.stringify(result.orderSummary))
 				.then((data:any)=>{
 					console.log('Resultaat van de server', data);

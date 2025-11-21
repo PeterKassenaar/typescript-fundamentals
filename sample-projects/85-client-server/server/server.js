@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var bodyParser = require("body-parser");
 var cors = require("cors");
@@ -40,4 +40,4 @@ var Server = /** @class */ (function () {
     };
     return Server;
 }());
-exports["default"] = new Server().express;
+exports.default = new Server().express;
