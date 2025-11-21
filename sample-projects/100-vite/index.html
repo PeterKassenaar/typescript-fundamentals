@@ -1,13 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>vite-project</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+</head>
+<body>
+<div id="app"></div>
+<!--    NOTE: The type="module" attribute tells the browser to load the script as a module.
+It can now handle *.ts files directly.
+
+They are transpiled INSTANTLY on the Vite Server and send
+to the browser as JavaSCript files. So the browser itself does NOT run TS, but relies on the Vite Server,
+which is already running TypeScript and is BLAZINGLY fast-->
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
