@@ -19,6 +19,7 @@ Some links with extra information we discovered during the training. I found the
 - General TypeScript homepage: https://www.typescriptlang.org/ 
   - Visit this first! It is the official home of typescript. AI is often behind!
 - Understanding the exclamation mark in Typescript: https://blog.logrocket.com/understanding-exclamation-mark-typescript/
+- "`type` vs `interface`, which one to use?", great article by Matt Pocock: https://www.totaltypescript.com/type-vs-interface-which-should-you-use
 - Nice article on user-defined type guards: https://bobbyhadz.com/blog/typescript-check-if-object-implements-interface.
 - How to check an interface? You can't use `typeof`. But you CAN use the `in` type guard: https://stackoverflow.com/questions/14425568/interface-type-check-with-typescript
 - How to get/create types based on the returned data from an array: https://steveholgado.com/typescript-types-from-arrays/
@@ -30,4 +31,4 @@ Some links with extra information we discovered during the training. I found the
 ## General TypeScript Gurus
 - Matt Pocock: https://www.youtube.com/results?search_query=matt+pocock
 - "17 most influential TypeScript Developers": https://echoglobal.tech/technologies/typescript/
-- 
+- ...
